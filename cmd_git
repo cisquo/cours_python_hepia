@@ -1,0 +1,13 @@
+git init
+git remote add origine https://github.com/cisquo/cours_python_hepia.git
+git add *
+git reset fju_venv/
+git reset __*
+vim .gitignore
+git config --global user.name "Cisquo"
+git config --global user.email "cisquo666@icloud.com"
+git commit -m "Intial commit"
+git add .gitignore
+git commit --amend -m "Initial commit"
+git push -u origin master
+
