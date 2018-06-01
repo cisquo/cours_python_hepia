@@ -1,5 +1,9 @@
-#!/usr/bin/env python3
- #-*- coding: utf-8 -*-
+cd Scripts
+python3 -m venv fju_venv
+source fju_venv/bin/activate
+pip3 install requests
+
+
 
 import request
 
@@ -20,4 +24,4 @@ print("Altitude de",city,":",alti)
 
 for i in range (24):
     print("heure:",str(i)+"H00  ",end='' )
-    print(dic["fcst_day_0"]["hourly_data"][str(i)+"H00"]["TMP2m"])
+    print(dic["fcst_day_0"]["hourly_data"][str(i)+"H00"]["APCPsfc"])
